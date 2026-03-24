@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Zahid0sixone</title>
+<meta name="title" content="Zahid0sixone | Official Website" />
+<meta name="description" content="Zahid0sixone (Z061) - Official Cyber Security Community. Tools, AI Bot, Video Downloader, QR Tools, and more." />
+<meta name="keywords" content="Zahid0sixone, Cyber Security, Hackers, Tools, AI Bot, Video Downloader" />
+<meta name="author" content="Zahid0sixone" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://zahid0sixone-ting.vercel.app/" />
+
+<meta property="og:title" content="Zahid0sixone" />
+<meta property="og:description" content="Welcome to the official website of Zahid0sixone (Z061). Explore tools, AI bot, and cyber security resources." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://zahid0sixone-ting.vercel.app/logo.png" />
+<meta property="og:url" content="https://zahid0sixone-ting.vercel.app/" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Zahid0sixone" />
+<meta name="twitter:description" content="Official Z061 Website - Cyber Security Experts & Tools." />
+<meta name="twitter:image" content="https://zahid0sixone-ting.vercel.app/logo.png" />
+
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://zahid0sixone-ting.vercel.app/sitemap.xml" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+	  /* 📢 Marquee Animation */
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  .animate-marquee {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 25s linear infinite;
+  }
+
+  /* Notice visible thakle section home ke niche namano */
+  #trs-notice-bar:not(.hidden) + #home {
+    padding-top: 130px;
+  }
+
+  /* Downloads Section Custom Styles */
+  .downloads .card {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.12);
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+  .downloads .card:hover {
+    transform: translateY(-5px);
+  }
+  .downloads .card h3 {
+    color: #ffdd00;
+    margin-bottom: 0.6rem;
+  }
+  .downloads .card p { color: #ccc; margin-bottom: 1rem; }
+  .downloads .card a {
+    display: inline-block;
+    background: #ffdd00;
+    color: #111;
+    padding: 0.45rem 0.9rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .downloads .card a:hover { background: #ffaa00; color: #000; }
+
+  /* Serial badge */
+  .serial-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(0,0,0,0.6);
+    color: #ffdd00;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 12px;
+    border: 1px solid rgba(255,221,0,0.12);
+  }
+
+  .section-subhead { margin: 2rem 0 1rem; }
+  @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+  .floating-chat, #floating-clock { animation: pulse 2s infinite; }
+  
+  /* Search Bar Focus Style */
+  #toolSearch:focus {
+    box-shadow: 0 0 10px #ffdd00;
+  }
+</style>
+</head>
+
+<body class="bg-black text-white font-sans">
+
+<header class="bg-black/80 fixed w-full z-50 shadow-md border-b border-yellow-500">
+  <nav class="container mx-auto flex justify-between items-center p-4">
+    <div class="flex items-center space-x-3">
+      <img src="https://i.postimg.cc/jdKJ6RTW/1758183930168.png" alt="Z061 Logo" class="w-10 h-10" />
+      <span class="text-yellow-400 font-bold text-lg">Zahid0sixone</span>
+    </div>
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+      <li><a href="#tools" class="hover:text-yellow-400">My Tools</a></li>
+      <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+      <li><a href="#mission" class="hover:text-yellow-400">Mission</a></li>
+      <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+    </ul>
+    <button class="md:hidden text-yellow-400" id="menu-btn">☰</button>
+  </nav>
+  <div id="mobile-menu" class="hidden bg-black border-t border-yellow-500 md:hidden">
+    <ul class="flex flex-col text-center">
+      <li><a href="#home" class="block py-2 hover:text-yellow-400">Home</a></li>
+      <li><a href="#tools" class="block py-2 hover:text-yellow-400">My Tools</a></li>
+      <li><a href="#about" class="block py-2 hover:text-yellow-400">About</a></li>
+      <li><a href="#mission" class="block py-2 hover:text-yellow-400">Mission</a></li>
+      <li><a href="#contact" class="block py-2 hover:text-yellow-400">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<div id="trs-notice-bar" class="hidden bg-yellow-400 text-black py-2 border-b border-black font-bold text-sm md:text-base z-40 fixed w-full mt-[72px] flex items-center justify-between px-4">
+  <div class="overflow-hidden whitespace-nowrap flex-grow">
+    <div id="notice-text" class="inline-block animate-marquee uppercase tracking-widest">
+      </div>
+  </div>
+  <a id="notice-btn" href="#" target="_blank" class="hidden ml-4 bg-black text-yellow-400 px-3 py-1 rounded text-xs md:text-sm font-extrabold hover:bg-gray-800 transition-all whitespace-nowrap">
+    BUTTON
+  </a>
+</div>
+
+<section id="home" class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-black via-gray-900 to-black px-4">
+  <img src="https://i.postimg.cc/jdKJ6RTW/1758183930168.png" alt="Z061 Logo" class="w-40 md:w-56 mb-6" />
+  <h1 class="text-4xl md:text-6xl font-bold text-yellow-400">Zahid0sixone</h1>
+  <p class="mt-4 text-gray-300 max-w-xl">Cyber Security Experts • Knowledge • Power • Brotherhood</p>
+</section>
+
+<section id="tools" class="downloads py-20 px-4 text-center">
+  <h2 class="text-3xl font-bold text-yellow-400 mb-6">MY TOOLS</h2>
+
+  <div class="max-w-md mx-auto mb-12">
+    <div class="relative">
+      <input type="text" id="toolSearch" placeholder="Search for tools (e.g. Video, BIN, QR)..." 
+      class="w-full bg-[#1a1a1a] border border-yellow-500/50 text-white rounded-lg px-5 py-3 pl-12 focus:outline-none transition-all">
+      <div class="absolute left-4 top-3.5 text-yellow-500">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="tool-group">
+    <h3 class="text-2xl text-yellow-400 section-subhead group-title">MEDIA TOOLS</h3>
+    <div class="grid md:grid-cols-3 gap-6 mb-8">
+      <div class="card tool-card">
+        <div class="serial-badge">M1</div>
+        <h3>Z061 - Video Downloader</h3>
+        <p>Download videos from any link instantly.</p>
+        <a href="https://zahid0sixone-ting.vercel.app/downloader">CLICK HERE</a>
+      </div>
+      <div class="card tool-card">
+        <div class="serial-badge">M2</div>
+        <h3>Z061 - Media to Link</h3>
+        <p>Convert media files to fast shareable links.</p>
+        <a href="https://zahid0sixone-ting.vercel.app/media_to_link">CLICK HERE</a>
+      </div>
+      <div class="card tool-card">
+        <div class="serial-badge">M3</div>
+        <h3>Z061 - YouTube Video Info</h3>
+        <p>Get detailed info about any YouTube video.</p>
+        <a href="https://zahid0sixone-ting.vercel.app/yt-info">CLICK HERE</a>
+      </div>
+      <div class="card tool-card">
+        <div class="serial-badge">M4</div>
+        <h3>Z061 - VIDEO CONVERTOR</h3>
+        <p>Upload any video and extract its audio to MP3 format.</p>
+        <a href="https://zahid0sixone-ting.vercel.app/video_to_audio">CLICK HERE</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="tool-group">
+    <h3 class="text-2xl text-yellow-400 section-subhead group-title">BIN TOOLS</h3>
+    <div class="grid md:grid-cols-3 gap-6 mb-8">
+      <div class="card tool-card">
+        <div class="serial-badge">B1</div>
+        <h3>Z061 - BIN Lookup</h3>
+        <p>Enter a BIN number to get full card details.</p>
+        <a href="https://zahid0sixone-ting.vercel.app/bin-lookup">CLICK HERE</a>
+      </div>
+      <div class="card tool-card">
+        <div class="serial-badge">B2</div>
+        <h3>Z061 - BIN GEN</h3>
+        <p>Generate card list with BIN.</p>
+        <a href="https://zahid0sixone-ting.vercel.app/bin-gen">CLICK HERE</a>
+      </div>
+      <div class="card tool-card">
+        <div class="serial-badge">B3</div>
+        <h3>Z061 CC CHECKER</h3>
+        <p>Card Validator — Number, Expiry & CVV Check.</p>
+        <a href="https://zahid0sixone-ting.vercel.app/cc-checker">CLICK HERE</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="tool-group">
+    <h3 class="text-2xl text-yellow-400 section-subhead group-title">OTHER TOOLS</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card tool-card">
+        <div class="serial-badge">T1</div>
+        <h3>Z061 - Rebel Bot</h3>
+        <p>Chat with Rebel AI and get instant answers.</p>
+        <a href="https://zahid0sixone-ting.vercel.app/rebel_bot">CLICK HERE</a>
+      </div>
+      <div class="card tool-card">
+        <div class="serial-badge">T1</div>
+        <h3>Z061 - calander</h3>
+        <p>ramadan calender .</p>
+        <a href="https://zahid0sixone-ting.vercel.app/ramadan">CLICK HERE</a>
+      </div>
+      <div class="card tool-card">
+        <div class="serial-badge">T2</div>
+        <h3>ওয়েবসাইট ZIP ডাউনলোডার</h3>
+        <p>যে কোনো ওয়েবসাইটের URL লিখুন এবং ZIP ফাইল ডাউনলোড করুন।</p>
+        <a href="https://zahid0sixone-ting.vercel.app/web-extract">CLICK HERE</a>
+      </div>
+      <div class="card tool-card">
+        <div class="serial-badge">T3</div>
+        <h3>Z061 - IP Location Tracker</h3>
+        <p>Find location details using an IP address.</p>
+        <a href="https://zahid0sixone-ting.vercel.app/locatoin_tracker">CLICK HERE</a>
+      </div>
+      <div class="card tool-card">
+        <div class="serial-badge">T4</div>
+        <h3>Z061 - URL Shortener</h3>
+        <p>Shorten long URLs quickly with is.gd API.</p>
+        <a href="https://zahid0sixone-ting.vercel.app/url-shortner">CLICK HERE</a>
+      </div>
+      <div class="card tool-card">
+        <div class="serial-badge">T5</div>
+        <h3>Z061 - GitHub Info</h3>
+        <p>Fetch public profile info using GitHub username.</p>
+        <a href="https://zahid0sixone-ting.vercel.app/github-info">CLICK HERE</a>
+      </div>
+         <div class="card tool-card">
+        <div class="serial-badge">T5</div>
+        <h3>Z061 - Fb Profile UID Finder</h3>
+        <p>Find Facebook UID & Profile Details instantly..</p>
+        <a href="https://zahid0sixone-ting.vercel.app/findeuid">CLICK HERE</a>
+      </div>
+        <div class="card tool-card">
+        <div class="serial-badge">T5</div>
+        <h3>Z061 - URL to Screenshotr</h3>
+        <p>Convert any live website into a high-quality image.</p>
+        <a href="https://zahid0sixone-ting.vercel.app/ss">CLICK HERE</a>
+      </div>
+      <div class="card tool-card">
+        <div class="serial-badge">T6</div>
+        <h3>Z061 - Emoji Mix Generator</h3>
+        <p>Combine two emojis to generate a fun new emoji.</p>
+        <a href="https://zahid0sixone-ting.vercel.app/emoji-mix">CLICK HERE</a>
+      </div>
+      <div class="card tool-card">
+        <div class="serial-badge">T7</div>
+        <h3>Z061 - Text to Speech</h3>
+        <p>Type text and convert it to audio in multiple languages.</p>
+        <a href="https://zahid0sixone-ting.vercel.app/text_voice">CLICK HERE</a>
+      </div>
+      <div class="card tool-card">
+        <div class="serial-badge">T8</div>
+        <h3>Z061 - Prayer Times</h3>
+        <p>Enter city or address to get today's prayer timings.</p>
+        <a href="https://zahid0sixone-ting.vercel.app/prayer_time">CLICK HERE</a>
+      </div>
+      <div class="card tool-card">
+        <div class="serial-badge">T9</div>
+        <h3>Z061 - QR Scanner</h3>
+        <p>Upload a QR code image and scan to get data.</p>
+        <a href="https://zahid0sixone-ting.vercel.app/qr_sacn">CLICK HERE</a>
+      </div>
+      <div class="card tool-card">
+        <div class="serial-badge">T10</div>
+        <h3>Z061 - Weather Info</h3>
+        <p>Enter a city to get current weather updates.</p>
+        <a href="https://zahid0sixone-ting.vercel.app/weather">CLICK HERE</a>
+      </div>
+      <div class="card tool-card">
+        <div class="serial-badge">T10</div>
+        <h3>TRA - Photo Geo-Locator</h3>
+        <p>Extract hidden GPS & EXIF metadata from images just like Pic2Ma.</p>
+        <a href="https://zahid0sixone-ting.vercel.app/pic2map">CLICK HERE</a>
+      </div>
+      <div class="card tool-card">
+        <div class="serial-badge">T11</div>
+        <h3>Z061 - QR Generator</h3>
+        <p>Enter text/URL and generate a QR code instantly.</p>
+        <a href="https://zahid0sixone-ting.vercel.app/qr_code">CLICK HERE</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="py-20 bg-black border-t border-yellow-500 text-center px-4">
+  <h2 class="text-3xl md:text-4xl font-extrabold text-yellow-400 mb-6">About Zahid0sixone</h2>
+  <p class="max-w-3xl mx-auto text-gray-300 text-lg leading-relaxed">
+    Zahid0sixone (Z061) is a passionate community of cyber security enthusiasts and digital freedom advocates.
+  </p>
+</section>
+
+<section id="mission" class="py-20 bg-black text-center px-4">
+  <h2 class="text-3xl md:text-4xl font-extrabold text-yellow-400 mb-6">Our Mission</h2>
+  <p class="max-w-3xl mx-auto text-gray-300 text-lg leading-relaxed">
+    Our mission is to raise awareness about cyber security and safeguard digital privacy.
+  </p>
+</section>
+
+<section id="contact" class="py-20 bg-black border-t border-yellow-500 text-center px-4">
+  <h2 class="text-3xl font-bold text-yellow-400 mb-6">Contact Us</h2>
+  <div class="flex justify-center space-x-6">
+    <a href="https://facebook.com/THE.REBEL.SQUAD.Z061" target="_blank" class="hover:text-yellow-400">Facebook</a>
+    <a href="https://rebel-tech-zone.blogspot.com/" target="_blank" class="hover:text-yellow-400">Blogger</a>
+    <a href="https://t.me/@THE_REBEL_SQUAD" target="_blank" class="hover:text-yellow-400">Telegram</a>
+  </div>
+</section>
+
+<footer class="bg-black py-6 text-center border-t border-yellow-500">
+  <p class="text-gray-500 text-sm">© 2025 Zahid0sixone - All Rights Reserved.</p>
+</footer>
+
+<script>
+	  async function syncNotice() {
+    try {
+      // GitHub Raw URL with Cache-Buster (?t=)
+      const rawUrl = "https://raw.githubusercontent.com/THE-REBEL-A4IF-V4U/Rebel/main/Notice.json";
+      const response = await fetch(`${rawUrl}?t=${new Date().getTime()}`);
+      
+      if (!response.ok) return;
+
+      const data = await response.json();
+      const config = data.notice_config;
+
+      const bar = document.getElementById('trs-notice-bar');
+      const text = document.getElementById('notice-text');
+      const btn = document.getElementById('notice-btn');
+
+      // Default hide
+      bar.classList.add('hidden');
+
+      if (config && config.show === true) {
+        text.innerText = config.message;
+        bar.classList.remove('hidden');
+
+        // Button Control
+        if (config.button_show === true) {
+          btn.innerText = config.button_text;
+          btn.href = config.button_url;
+          btn.classList.remove('hidden');
+        } else {
+          btn.classList.add('hidden');
+        }
+      }
+    } catch (err) { 
+      console.error("Notice Sync Error:", err);
+    }
+  }
+
+  // Page load holei call koro
+  window.addEventListener('DOMContentLoaded', syncNotice);
+
+	
+	
+	
+  // Mobile Menu
+  const btn = document.getElementById("menu-btn");
+  const menu = document.getElementById("mobile-menu");
+  btn.addEventListener("click", () => menu.classList.toggle("hidden"));
+
+  // 🔍 Search Functionality
+  const searchInput = document.getElementById('toolSearch');
+  const toolCards = document.querySelectorAll('.tool-card');
+  const toolGroups = document.querySelectorAll('.tool-group');
+
+  searchInput.addEventListener('input', (e) => {
+    const filter = e.target.value.toLowerCase();
+    
+    toolCards.forEach(card => {
+      const title = card.querySelector('h3').innerText.toLowerCase();
+      const desc = card.querySelector('p').innerText.toLowerCase();
+      
+      if (title.includes(filter) || desc.includes(filter)) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+
+    // হেডিংগুলো (MEDIA TOOLS, BIN TOOLS) হাইড করা যদি সেই গ্রুপে কোনো টুল না থাকে
+    toolGroups.forEach(group => {
+      const visibleCards = group.querySelectorAll('.tool-card[style="display: block;"]').length;
+      const groupTitle = group.querySelector('.group-title');
+      
+      // If filter is empty, reset display
+      if (filter === "") {
+        group.style.display = "block";
+        if(groupTitle) groupTitle.style.display = "block";
+      } else if (visibleCards === 0) {
+        groupTitle.style.display = "none";
+      } else {
+        groupTitle.style.display = "block";
+      }
+    });
+  });
+
+  // Digital Clock
+  
+  // Digital Clock Logic (Fixed)
+  function updateClock() {
+    const clockDiv = document.getElementById('floating-clock');
+    if (!clockDiv) return;
+
+    const now = new Date();
+    let hours = now.getHours();
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    const ampm = hours >= 12 ? "PM" : "AM";
+    
+    hours = hours % 12 || 12;
+    const strHours = String(hours).padStart(2, '0');
+    
+    const day = String(now.getDate()).padStart(2, '0');
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const year = now.getFullYear();
+
+    clockDiv.innerHTML = `
+      <span class="text-black font-bold text-sm" style="display:block;">${strHours}:${minutes}:${seconds} ${ampm}</span>
+      <span class="text-black text-[10px] font-semibold mt-1" style="display:block; border-top: 1px solid rgba(0,0,0,0.1); padding-top:2px;">${day}/${month}/${year}</span>
+    `;
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock(); // Initial call
+</script>
+<a href="https://zahid0sixone-ting.vercel.app/Trs_Agent" class="floating-chat fixed bottom-6 right-6 flex flex-col items-center gap-1 z-50 group">
+  <div class="w-16 h-16 bg-yellow-400 rounded-full shadow-lg flex justify-center items-center hover:bg-yellow-500 transition-all duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 11a9 9 0 0 1 18 0v4a3 3 0 0 1-3 3h-1M6 15v-2a6 6 0 0 1 12 0v2M7 18a2 2 0 0 1-2-2v-1M17 14v3a2 2 0 0 1-2 2h-1"></path></svg>
+  </div>
+  <span class="text-xs font-semibold text-white bg-black/70 px-2 py-1 rounded-lg shadow-md group-hover:bg-black">Chat with us</span>
+</a>
+
+<div id="floating-clock" class="fixed bottom-6 left-6 w-24 h-20 bg-yellow-400 rounded-lg shadow-lg flex flex-col justify-center items-center hover:bg-yellow-500 transition-all duration-300 z-50 text-center p-1"></div>
+
+</body>
+  </html>
