@@ -17,6 +17,14 @@
       background: linear-gradient(90deg, #2563eb, #7c3aed);
     }
 
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-bottom: 15px;
+    }
+
     section {
       padding: 50px;
       text-align: center;
@@ -36,7 +44,20 @@
       padding: 20px;
       border-radius: 10px;
       display: inline-block;
-      width: 200px;
+      width: 220px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background: #334155;
+    }
+
+    .social a {
+      margin: 10px;
+      color: #38bdf8;
+      text-decoration: none;
+      display: inline-block;
     }
 
     footer {
@@ -51,34 +72,44 @@
 <body>
 
 <header>
+  <!-- এখানে তোমার ছবি বসাও -->
+  <img src="https://github.com/zahidulislam061/Zahid0sixone/blob/ccb67a619730584e6f376fe0ec9f10bb1da87dad/Picsart_24-11-24_14-27-45-112.jpg" alt="profile">
+
   <h1>Md Jahedul Islam 🚀</h1>
   <p>Digital Creator | Social Media Enthusiast</p>
+
   <br>
   <a href="#contact" class="btn">Contact Me</a>
 </header>
 
 <section>
   <h2>About Me</h2>
-  <p>I am passionate about social media, creativity, and learning new skills. I love exploring new ideas and growing professionally.</p>
+  <p>I love exploring new ideas, working creatively, and building my future in the digital world.</p>
 </section>
 
 <section>
   <h2>My Skills</h2>
   <div class="card">Social Media</div>
   <div class="card">Content Creation</div>
-  <div class="card">Basic Web Design</div>
+  <div class="card">Web Design</div>
 </section>
 
 <section>
   <h2>Projects</h2>
-  <div class="card">My Website</div>
-  <div class="card">Future Project</div>
+  <div class="card">Portfolio Website</div>
+  <div class="card">More Coming Soon</div>
 </section>
 
 <section id="contact">
-  <h2>Contact</h2>
+  <h2>Contact Me</h2>
   <p>Email: ariyanjahed.saudi@gmail.com</p>
   <p>WhatsApp: +966506279427</p>
+
+  <div class="social">
+    <a href="https://www.facebook.com/SavageZahid">Facebook</a>
+    <a href="https://www.instagram.com/swag_zahid">Instagram</a>
+    <a href="https://www.linkedin.com/in/md-jahedul-islam-330398373">LinkedIn</a>
+  </div>
 </section>
 
 <footer>
