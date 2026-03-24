@@ -56,3 +56,66 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Tools</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #0f172a;
+      color: white;
+      text-align: center;
+    }
+
+    input, button {
+      padding: 10px;
+      margin: 10px;
+    }
+
+    .tool-box {
+      margin: 20px;
+      padding: 20px;
+      background: #1e293b;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>🛠️ My Tools</h1>
+
+<!-- QR Generator -->
+<div class="tool-box">
+  <h3>QR Generator</h3>
+  <input id="qrText" placeholder="Enter text">
+  <button onclick="generateQR()">Generate</button>
+  <br>
+  <img id="qrImg">
+</div>
+
+<!-- Text to Speech -->
+<div class="tool-box">
+  <h3>Text to Speech</h3>
+  <input id="ttsText" placeholder="Enter text">
+  <button onclick="speak()">Speak</button>
+</div>
+
+<script>
+function generateQR() {
+  let text = document.getElementById("qrText").value;
+  document.getElementById("qrImg").src =
+    "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + text;
+}
+
+function speak() {
+  let text = document.getElementById("ttsText").value;
+  let speech = new SpeechSynthesisUtterance(text);
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>
